@@ -1,0 +1,37 @@
+@startuml
+
+title Classes - Book UML Diagrams
+
+
+class LibraryBook {
+}
+
+class Book {
+}
+
+Book <|.. LibraryBook
+
+class Logger {
+}
+
+DocumentDTO *-- Logger
+
+class DocumentDTO {
+}
+
+class BookRequestDTO {
+}
+
+BookRequestService .. BookRequestDTO
+
+class BookRequestService {
+}
+
+class Application {
+}
+
+Application -- Logger
+Application ..|> LibraryBook
+Application ..|> BookRequestService
+
+@enduml
