@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Interfaces Order System Test",
+      "setup": "",
+      "run": "./gradlew interfaces-ordersystem-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "packages Application Test",
+      "setup": "",
+      "run": "./gradlew packages-application-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Packages Library Book Test",
+      "setup": "",
+      "run": "./gradlew packages-librarybook-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Packages BookUML Test",
+      "setup": "",
+      "run": "./gradlew packages-bookuml-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
