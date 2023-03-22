@@ -11,7 +11,8 @@ public class CardTest {
         DeckOfCards deckTwo = DeckOfCards.getInstance();
 
         // TODO will this pass? Why?
-        // assertEquals(deckOne, deckTwo);
+
+         assertEquals(deckOne, deckTwo);
     }
 
     @Test
@@ -26,7 +27,7 @@ public class CardTest {
         String deckTwoFormatted = deckTwo.print();
 
         // TODO will this pass? Why?
-        // assertEquals(deckTwoFormatted, deckOneFormatted);
+         assertEquals(deckTwoFormatted, deckOneFormatted);
     }
 
     @Test
@@ -43,7 +44,7 @@ public class CardTest {
         String deckTwoFormatted = deckTwo.print();
 
         // TODO will this pass? Why?
-        // assertEquals(deckTwoFormatted, deckOneFormatted);
+         assertEquals(deckTwoFormatted, deckOneFormatted);
     }
 
 

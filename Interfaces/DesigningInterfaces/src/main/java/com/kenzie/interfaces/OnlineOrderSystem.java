@@ -1,6 +1,6 @@
 package com.kenzie.interfaces;
 
-/*
+
 public class OnlineOrderSystem extends OrderSystem{
 
     public OnlineOrderSystem(Menu[] menuList, String paymentOption, Order currentOrder, Customer currentCustomer) {
@@ -16,4 +16,3 @@ public class OnlineOrderSystem extends OrderSystem{
     }
 
 }
- */

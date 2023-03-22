@@ -1,6 +1,6 @@
 package com.kenzie.interfaces;
 
-/*
+
 public class FoodItem extends MenuItem{
 
     public FoodItem(int itemID, String item, double price) {
@@ -11,4 +11,3 @@ public class FoodItem extends MenuItem{
         System.out.println(itemID + " has been removed!");
     }
 }
- */

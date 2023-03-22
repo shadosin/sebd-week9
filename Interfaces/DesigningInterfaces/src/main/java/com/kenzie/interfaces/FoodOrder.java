@@ -1,6 +1,6 @@
 package com.kenzie.interfaces;
 
-/*
+
 public class FoodOrder extends Order{
 
     public FoodOrder(MenuItem[] items, double total, String status) {
@@ -17,4 +17,3 @@ public class FoodOrder extends Order{
     }
 
 }
- */

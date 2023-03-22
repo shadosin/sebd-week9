@@ -2,7 +2,7 @@ package com.kenzie.interfaces;
 
 import java.util.ArrayList;
 
-/*
+
 public class RestaurantMenu extends Menu {
 
     public RestaurantMenu(String name, ArrayList<MenuItem> items) {
@@ -21,4 +21,3 @@ public class RestaurantMenu extends Menu {
         System.out.println("Remove item");
     }
 }
- */

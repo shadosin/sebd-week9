@@ -4,30 +4,76 @@ title Classes - Book UML Diagrams
 
 
 class LibraryBook {
+-isbn: String
+-subjectList: String
++LibraryBook()
++LibraryBook(title: String, author: String)
++setBookInfo(responseString: String)
++toString():String
+
 }
 
 class Book {
+#title:String
+#author:String
++Book()
++Book(title:String, author:String)
++toString():String
++setBookInfo(responseString: String)
 }
 
 Book <|.. LibraryBook
 
 class Logger {
+-logFile:string
+-writer: PrintWriter
+-logger:Logger
+-Logger()
++getInstance():Logger
++logMessage(message:string)
 }
 
 DocumentDTO *-- Logger
 
 class DocumentDTO {
+-subject: List<String>
+-person: List<String>
+-authorName: List<String>
+-isbn: List<String>
+-title: String
++getSubject():List<String>
++getAuthorName(): List<String>
++getTitle(): String
++getIsbn(): List<String>
 }
 
 class BookRequestDTO {
+-numfoundexact:boolean
+-start:int
+-numfound:int
+-docs:ArrayList<DocumentDTO>
++getDocs(): ArrayList<DocumentDTO>
++getNumFound():int
++setNumFound(numfound:int)
 }
 
 BookRequestService .. BookRequestDTO
 
 class BookRequestService {
++get_url:string
+-debug:boolean
++logger: Logger
++formatSearchString(requestString:string):string
++formatResponseString(requestString:string, isbn:string,
+subjectList: ArrayList<string>):string
++sendGetRequest(requestString:String):string
 }
 
 class Application {
++convertResponseToLibraryBook(response:String):LibraryBook
++returnBookList(response1:String, response2:String, response3:String,
+response4:String, response5:String): ArrayList<LibraryBook>
++main(args: String[])
 }
 
 Application -- Logger

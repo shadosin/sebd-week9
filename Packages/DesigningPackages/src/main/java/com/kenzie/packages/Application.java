@@ -16,7 +16,9 @@ public class Application {
         use the response string to set book info. Return the generated object.
      */
     public static LibraryBook convertResponseToLibraryBook(String response){
-        return null;
+        LibraryBook libraryBook = new LibraryBook();
+        libraryBook.setBookInfo(response);
+        return libraryBook;
     }
 
     /*
@@ -30,7 +32,29 @@ public class Application {
                                                         String response3,
                                                         String response4,
                                                         String response5) {
-        return null;
+        ArrayList<LibraryBook> returnBooks = new ArrayList<>();
+        LibraryBook libraryBook1 = new LibraryBook();
+        LibraryBook libraryBook2 = new LibraryBook();
+        LibraryBook libraryBook3 = new LibraryBook();
+        LibraryBook libraryBook4 = new LibraryBook();
+        LibraryBook libraryBook5 = new LibraryBook();
+
+        libraryBook1.setBookInfo(response1);
+        libraryBook2.setBookInfo(response2);
+        libraryBook3.setBookInfo(response3);
+        libraryBook4.setBookInfo(response4);
+        libraryBook5.setBookInfo(response5);
+
+        returnBooks.add(libraryBook1);
+        returnBooks.add(libraryBook2);
+        returnBooks.add(libraryBook3);
+        returnBooks.add(libraryBook4);
+        returnBooks.add(libraryBook5);
+
+
+
+
+        return returnBooks;
     }
 
     public static void main(String[] args) {
